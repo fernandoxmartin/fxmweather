@@ -1,0 +1,43 @@
+.outer-setting-container {
+  width: 100%;
+  height: 90%;
+  background: linear-gradient(to bottom, #0b7bb3, #0ea0e7);
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .inner-setting-container {
+    width: 30%;
+    height: 50%;
+    background: #0871a5;
+    margin: 0 auto;
+    border-radius: 20px;
+    .settings {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      input {
+        display: none;
+      }
+      label {
+        border-radius: 20px;
+        height: 30%;
+        width: 90%;
+        font-size: 35px;
+        font-weight: bolder;
+        color: #003d5c;
+        transition: 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      input:checked + label {
+        background: #c0e5f8;
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+.outer-forecast-container {
+  width: 100%;
+  height: 90%;
+  background: linear-gradient(to bottom, #0b7bb3, #0ea0e7);
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  .inner-forecast-container {
+    width: 90%;
+    height: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 70px;
+    .day-container {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      color: #003d5c;
+      font-size: 18px;
+      .date {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .day_name {
+          font-weight: bolder;
+          font-size: 16px;
+        }
+        .day_date {
+          color: #eee;
+          font-size: 15px;
+        }
+      }
+      .date-temp {
+        .max {
+          font-size: 24px;
+          font-weight: bolder;
+        }
+        .min {
+          font-size: 16px;
+          color: #eee;
+        }
+      }
+    }
+  }
+}
