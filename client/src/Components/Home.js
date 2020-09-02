@@ -53,7 +53,11 @@ const Home = (props) => {
   return (
     <>
       <div className="home-animation"></div>
+
       <div className="home">
+        <div className="home-header">
+          <h1>Fxm Weather</h1>
+        </div>
         {error}
         <form className="form" onSubmit={getGeolocation}>
           <input
@@ -66,6 +70,7 @@ const Home = (props) => {
           />
           <span className="focus_border"></span>
         </form>
+        <label>Enter City</label>
       </div>
     </>
   );

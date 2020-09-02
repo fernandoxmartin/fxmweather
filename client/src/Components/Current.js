@@ -57,19 +57,28 @@ const Current = (props) => {
         <div className="detail-container">
           <div className="detail">
             <h3>Wind</h3>
-            <h2>{current.windSpeed}</h2>
+            <h2>
+              {Math.round(current.windSpeed)}{" "}
+              <span className="current-unit">mph</span>
+            </h2>
           </div>
           <div className="detail">
             <h3>Rain</h3>
-            <h2>{current.precipProbability} %</h2>
+            <h2>
+              {current.precipProbability}{" "}
+              <span className="current-unit">%</span>
+            </h2>
           </div>
           <div className="detail">
             <h3>Pressure</h3>
-            <h2>{current.pressure}</h2>
+            <h2>{Math.round(current.pressure)}</h2>
           </div>
           <div className="detail">
             <h3>Humidity</h3>
-            <h2>{current.humidity * 100} %</h2>
+            <h2>
+              {Math.round(current.humidity * 100)}{" "}
+              <span className="current-unit">%</span>
+            </h2>
           </div>
           <div className="detail">
             <h3>Visibility</h3>
